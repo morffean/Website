@@ -18,17 +18,6 @@
         p {
             font-family: verdana;
         }
-        a.back {
-            top: 0;
-            left: 0;
-            margin: 20px; /* Add margin for spacing */
-        }
-
-        a.zoom {
-            top: auto;
-            left: auto;
-            margin: 0; /* Remove margin for default positioning within the paragraph */
-        }
     </style>
 </head>
 
@@ -37,10 +26,18 @@
     <div>
         <h1>CONTACT</h1>
         <p>I'm always happy to talk to the younger generation of music. If you want to know anything about the piano or have questions for me, feel free to contact me at:
-            Visit us at <a class="zoom" href="https://zoom.us/">zoom</a> or at:<br><em>Place 516, Somewhere</em><br>Australia
+            Visit us at <a href="https://zoom.us/">zoom</a> or at:<br><em>Place 516, Somewhere</em><br>Australia
         </p>
     </div>
 
-    <a class="back" href="index.html">Back</a>
-
-</body>
+.topLeft {
+position: absolute;
+top: 0;
+left: 0;
+font-size: 50px;
+}
+</style>
+</head>
+<div class="topLeft">
+<a href="index.html">Back</a>
+</div>
